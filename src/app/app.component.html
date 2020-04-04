@@ -1,0 +1,22 @@
+<md-toolbar color="primary">
+   <span routerLink="/home" md-card-avatar class="example-header-image"></span>
+   Spot the Alphabets !
+   <span class="app-toolbar-filler"></span>
+   <button class="right-align" md-icon-button [mdMenuTriggerFor]="menu">
+     <md-icon>more_vert</md-icon>
+   </button>
+   <md-menu #menu="mdMenu">
+     <button md-menu-item routerLink="/vr">
+       <md-icon>videocam</md-icon>
+       <span>Start the Game</span>
+     </button>
+     <button md-menu-item routerLink="/chart">
+       <md-icon>stars</md-icon>
+       <span>Report Card</span>
+     </button>
+   </md-menu>
+  </md-toolbar>
+ <!-- <div routerLink="/home" md-card-avatar class="example-header-image"></div> -->
+<!-- <md-card-title routerLink="/home">{{title}}</md-card-title> -->
+<!-- <button kendoButton [primary]="true">My Kendo UI Button</button> -->
+ <router-outlet></router-outlet>
